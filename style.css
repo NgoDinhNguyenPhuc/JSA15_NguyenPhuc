@@ -1,0 +1,52 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.logo {
+  width: 100px;
+  height: 60px;
+  background-image: url(https://preview.uideck.com/items/mate/img/logo.png);
+}
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: gray;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.column ul {
+  display: flex;
+}
+ul li {
+  padding: 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+ul li a {
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+ul li a:active {
+  background-color: aquamarine;
+  border-radius: 30px;
+}
+ul li a:hover {
+  color: aqua;
+}
