@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="thuthach1.css" />
+  </head>
+  <body>
+    <button onclick="myFunction(event)">Click</button>
+    <div class="">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+
+  <script>
+    function myFunction(event) {
+      var elements = document.querySelector("div");
+      if (elements !== null) {
+        elements.classList.add("lds-ellipsis");
+      }
+    }
+  </script>
+</html>

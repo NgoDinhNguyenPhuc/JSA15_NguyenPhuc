@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 1vw 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img {
+  display: flex;
+  background-image: url(https://th.bing.com/th/id/R.fbd0a7dcd0ecd664aa2528808a7d2794?rik=5%2bItlWBd8ns3Lw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMn9KEYe.jpg&ehk=JjHsyOAhSWVJSDLptaqs8P0zJMB9G%2bnSrhJ4ACU9Svg%3d&risl=&pid=ImgRaw&r=0);
+  width: 30vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
