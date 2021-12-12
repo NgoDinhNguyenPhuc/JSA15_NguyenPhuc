@@ -1,91 +1,108 @@
+/* reset css */
 * {
   list-style: none;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   font-size: 14px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
+  background-color: darkgray;
+  margin: 0;
 }
-.logo {
+.container {
+  width: 70%;
+  margin: auto;
+}
+/* header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.2s;
+}
+
+header .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+header .logo {
   width: 100px;
   height: 60px;
   background-image: url(https://preview.uideck.com/items/mate/img/logo.png);
 }
-.container {
-  background-image: url(https://preview.uideck.com/items/mate/img/hero-area.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 27vw;
-}
-.column {
+header .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.column ul {
+
+header ul {
   display: flex;
-  position: sticky;
 }
-ul li {
-  padding: 0 0.4vw;
+header ul li {
+  padding: 0 4px;
   font-size: 15px;
   font-weight: 600;
 }
-ul li a {
+header ul li a {
   color: #fff;
-  border: 0px solid rgb(0, 0, 0);
-  padding: 1.5vh 1vw;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+header ul li a:active {
+  background-color: aquamarine !important;
   border-radius: 30px;
 }
-.row {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: auto;
-  padding: 20px;
+header ul li a:hover {
+  background-color: rgba(127, 255, 212, 0.432);
+  border-radius: 30px;
 }
-ul li a:active {
+.active {
   background-color: aquamarine;
-  border-radius: 30px;
 }
-ul li a:hover {
-  color: aqua;
+/* body */
+#body {
+  position: relative;
+  top: -80px;
 }
-.download {
+/* banner */
+.banner {
+  padding-top: 60px;
+  height: 535px;
+  background-image: url(https://preview.uideck.com/items/mate/img/hero-area.jpg);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 2vw;
 }
 
-.download .word h1 {
-  color: white;
-  font-size: 2.5vw;
+.banner-cover {
   display: flex;
-  align-items: center;
-  margin-bottom: 2vw;
+  flex-direction: column;
+  justify-content: center;
 }
-.download .word p {
+
+.banner-cover .row h1,
+p {
+  text-align: center;
   color: white;
+}
+.banner-cover .row h1 {
+  font-size: 40px;
+}
+.banner-cover .row {
   display: flex;
   justify-content: center;
-  margin-bottom: 2.5vw;
-  font-size: 0.8vw;
 }
-.download .btn > a {
-  color: white;
-  border: 1px solid #61d2b4;
-  background: #61d2b4;
-  border-radius: 30px;
-  font-size: 0.7vw;
-  padding: 11px 40px;
-  font-weight: 400;
-}
-.download .btn > a:hover {
-  background: #55b39a;
+
+.banner-cover button {
+  padding: 12px 35px;
+  border-radius: 35px;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: aquamarine;
 }
